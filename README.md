@@ -61,7 +61,7 @@ small helping library
 3. Так же определены соответствующие операторы += и *=
 
 ##### `#include <cool/loop.hpp>`
-Добавляет бесконечный цикл в стиле языка R - `#define loop while(true)`
+Добавляет бесконечный цикл - `#define loop while(true)`
         
         loop
         {

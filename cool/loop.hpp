@@ -1,7 +1,7 @@
 #ifndef COOL_LOOP_HPP
 #define COOL_LOOP_HPP
 
-//R-style loop
+//simple-syle loop
 #define loop while(true)
 
 #endif
