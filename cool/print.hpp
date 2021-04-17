@@ -6,6 +6,10 @@
 
 namespace cool
 {
+	inline void setCyrillic()
+	{
+		setlocale(LC_ALL, "Russian");
+	}
 
 	void print() { }
 

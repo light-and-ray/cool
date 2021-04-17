@@ -18,14 +18,20 @@ int main()
     std::string s = "s";
     println((s + " " + 1.5 + " ") * 4);
 
+    setCyrillic();
+    println();
+    print("Классная", "Cool");
 }
 
 /*
  
-    Вывод:
+Вывод:
 
     num = 5 num = 11 num = 7 num = 13 num = 11 num = 10
 
     s 1.500000 s 1.500000 s 1.500000 s 1.500000
 
+    Классная Cool
+
+    
 */
