@@ -6,16 +6,16 @@
 
 namespace cool
 {
-	double random(double rmin, double rmax, int c = 4)
+	double random(double rmin, double rmax, int precision = 4)
 	{
 		int x = rand();
 		double y = x * (rmax - rmin + 1) / RAND_MAX + rmin;
-		return round(y * pow(10, c)) / pow(10, c);
+		return round(y * pow(10, precision)) / pow(10, precision);
 	}
 
-	inline double random(double rmax, int c = 4)
+	inline double random(double rmax, int precision = 4)
 	{
-		return random(0, rmax, c);
+		return random(0, rmax, precision);
 	}
 
 	int random(int rmin, int rmax)

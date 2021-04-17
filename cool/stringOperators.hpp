@@ -105,7 +105,7 @@ std::string operator*= (std::string& s, int num)
 
 namespace std
 {
-    string to_string(const string s)
+    string to_string(const string& s)
     {
         return s;
     }

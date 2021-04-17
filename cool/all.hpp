@@ -4,5 +4,6 @@
 #include "print.hpp"
 #include "random.hpp"
 #include "stringOperators.hpp"
+#include "loop.hpp"
 
 #endif
