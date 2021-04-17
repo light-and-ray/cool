@@ -3,6 +3,7 @@
 
 #include <string>
 #include <iostream>
+#include <iomanip>
 
 namespace cool
 {
@@ -11,12 +12,15 @@ namespace cool
 		setlocale(LC_ALL, "Russian");
 	}
 
-	void print() { }
+	inline void print() 
+	{ 
+		std::cout << ' ';
+	}
 
 	template <typename Arg>
 	inline void print(const Arg& arg)
 	{
-		std::cout << arg << ' ';
+		std::cout << std::setprecision(4) << std::fixed << arg << ' ';
 	}
 
 	template <typename Arg, typename... Args>
@@ -34,7 +38,7 @@ namespace cool
 	template <typename Arg>
 	inline void println(const Arg& arg)
 	{
-		std::cout << arg << '\n';
+		std::cout << std::setprecision(4) << std::fixed << arg << '\n';
 	}
 
 	template <typename... Args>
@@ -49,7 +53,7 @@ namespace cool
 	template <typename Arg>
 	inline void print0(const Arg& arg)
 	{
-		std::cout << arg;
+		std::cout << std::setprecision(4) << std::fixed << arg;
 	}
 
 	template <typename Arg, typename... Args>
