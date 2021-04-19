@@ -17,6 +17,8 @@ small helping library
   
 `print0(Args)` - выводит аргументы друг за другом без никаких дополнительных символов
 
+`printFlush()` - делает flush
+
 `setCyrillic()` - включает кириллицу в консоли - `setlocale(LC_ALL, "Russian")`
 
 `getPrintOutPtr()` - возращает указатель на поток, переданный в предыдущей функции
