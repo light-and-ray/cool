@@ -5,6 +5,11 @@
 #include <iostream>
 #include <iomanip>
 
+namespace
+{
+	std::ostream* out = &std::cout;
+}
+
 namespace cool
 {
 	inline void setCyrillic()
@@ -12,15 +17,26 @@ namespace cool
 		setlocale(LC_ALL, "Russian");
 	}
 
+	void setPrintOut(std::ostream& os)
+	{
+		::out = &os;
+	}
+
+	std::ostream* getPrintOutPtr()
+	{
+		return ::out;
+	}
+	
+
 	inline void print() 
 	{ 
-		std::cout << ' ';
+		*::out << ' ';
 	}
 
 	template <typename Arg>
 	inline void print(const Arg& arg)
 	{
-		std::cout << std::setprecision(4) << std::fixed << arg << ' ';
+		*::out <<  std::fixed << std::setprecision(4) << arg << ' ';
 	}
 
 	template <typename Arg, typename... Args>
@@ -33,12 +49,12 @@ namespace cool
 
 	inline void println()
 	{
-		std::cout << '\n';
+		*::out << '\n';
 	}
 	template <typename Arg>
 	inline void println(const Arg& arg)
 	{
-		std::cout << std::setprecision(4) << std::fixed << arg << '\n';
+		*::out << std::fixed << std::setprecision(4) << arg << '\n';
 	}
 
 	template <typename... Args>
@@ -53,7 +69,7 @@ namespace cool
 	template <typename Arg>
 	inline void print0(const Arg& arg)
 	{
-		std::cout << std::setprecision(4) << std::fixed << arg;
+		*::out << std::fixed << std::setprecision(4) << arg;
 	}
 
 	template <typename Arg, typename... Args>
