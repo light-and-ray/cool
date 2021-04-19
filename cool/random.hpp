@@ -24,7 +24,7 @@ namespace cool
 	int random(int rmin, int rmax)
 	{
 		int x = rand();
-		int y = double((long)x * (rmax - rmin + 1)) / RAND_MAX + rmin;
+		int y = ((long)x * (rmax - rmin + 1)) / RAND_MAX + rmin;
 		return y;
 	}
 

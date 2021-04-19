@@ -27,6 +27,10 @@ namespace cool
 		return ::out;
 	}
 	
+	inline void printFlush()
+	{
+		*::out << std::flush;
+	}
 
 	inline void print() 
 	{ 
