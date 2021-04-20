@@ -1,10 +1,10 @@
 
 
-#undef print cool_print
+#undef print 
 
-#undef println cool_println
+#undef println 
 
-#undef printlnn cool_printlnn
+#undef printlnn 
 
-#undef print_sep cool_print_sep
+#undef print_sep 
 

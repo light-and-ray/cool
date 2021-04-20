@@ -138,6 +138,9 @@ void cool_hidden_print(char* sep, int n, ...)
 
 char* cool_print_sep = " ";
 
+//hide this a big part of code
+#if 1 
+
 #define cool_print_12(x1, x2, x3, x4, x5, x6, x7, x8, x9, x10, x11, x12, ...)   \
     cool_hidden_add(x1); \
     cool_hidden_add(x2); \
@@ -252,15 +255,18 @@ char* cool_print_sep = " ";
 #define cool_print_1(x, ...)   \
     cool_hidden_add(x); \
     cool_hidden_print(cool_print_sep, 1, x)
-    
+
+
+#endif //hide this a big part of code
 
 //#define COOL_HAS_COMMA(_0, _1, _2, ...) _2
 
-//#define cool_print(...)\
+/*
+#define cool_print(...)\
         COOL_HAS_COMMA(__VA_ARGS__,\
             cool_print_(__VA_ARGS__ , COOL_RSEQ_N()),\
             printf(cool_cprint_sep))
-
+            */
 
 
 #define cool_print(...) \

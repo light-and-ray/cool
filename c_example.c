@@ -26,6 +26,25 @@ int main()
 
 }
 
+int main()
+{
+    println(5, "C11", "_Generic", 14.5, "Any type, any number!", 1.2f);
+    printlnn();
+
+//  prints: 5 C11 _Generic 14.5000 Any type, any number! 2.0000
+
+    print_sep = "; ";
+
+    for (int i = 0; i < 7; i++)
+    {
+        print(i + 1);
+    }
+
+}
+
+
+
+
 #include <cool/c/unusing_print.h>
 
 /*
