@@ -27,3 +27,17 @@ int main()
 }
 
 #include <cool/c/unusing_print.h>
+
+/*
+
+Out:
+
+    Cool lib
+    1-2-3-4-5-6-7-
+
+    This support few types 2 2.5740 0010
+
+    Up to 12 params:
+    1 2 3 4 5 6 7 8 9 10 11 12
+
+*/

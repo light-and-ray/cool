@@ -20,18 +20,18 @@ int main()
 
     setCyrillic();
     println();
-    print("Классная", "Cool");
+    print("ГЉГ«Г Г±Г±Г­Г Гї", "Cool");
 }
 
 /*
  
-Вывод:
+Out:
 
     num = 5 num = 11 num = 7 num = 13 num = 11 num = 10
 
     s 1.500000 s 1.500000 s 1.500000 s 1.500000
 
-    Классная Cool
+    РџСЂРёРІРµС‚ Cool
 
     
 */
