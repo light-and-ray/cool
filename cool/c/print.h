@@ -268,7 +268,6 @@ char* cool_print_sep = " ";
             printf(cool_cprint_sep))
             */
 
-
 #define cool_print(...) \
 	cool_print_(__VA_ARGS__ , COOL_RSEQ_N())
 
