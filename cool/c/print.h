@@ -79,47 +79,39 @@ void cool_hidden_add_void()
     default: cool_hidden_add_void \
 )()
 
-#define COOL_CAST(T, x) *((T*) (x))
 
 void cool_hidden_print(char* sep, int n, ...)
 {
     va_list argptr;
     va_start(argptr, n);
 
-    void* x;
 
     for (int i = 0; i < n; i++)
     {
         switch (cool_hidden_types[i])
         {
         case COOL_HIDDEN_INT:
-            x = &va_arg(argptr, int);
-            printf("%d%s", COOL_CAST(int, x), sep);
+            printf("%d%s", va_arg(argptr, int), sep);
             break;
 
         case COOL_HIDDEN_STRING:
-            x = &va_arg(argptr, char*);
-            printf("%s%s", COOL_CAST(char*, x) , sep);
+            printf("%s%s", va_arg(argptr, char*), sep);
             break;
 
         case COOL_HIDDEN_FLOAT:
-            x = &va_arg(argptr, float);
-            printf("%.4f%s", COOL_CAST(float, x), sep);
+            printf("%.4f%s", va_arg(argptr, float), sep);
             break;
 
         case COOL_HIDDEN_DOUBLE:
-            x = &va_arg(argptr, double);
-            printf("%.4f%s", COOL_CAST(double, x), sep);
+            printf("%.4f%s", va_arg(argptr, double), sep);
             break;
 
         case COOL_HIDDEN_CHAR:
-            x = &va_arg(argptr, char);
-            printf("%c%s", COOL_CAST(char, x), sep);
+            printf("%c%s", va_arg(argptr, char), sep);
             break;
 
         case COOL_HIDDEN_UINT:
-            x = &va_arg(argptr, unsigned int);
-            printf("%.4u%s", COOL_CAST(unsigned int, x), sep);
+            printf("%.4u%s", va_arg(argptr, unsigned int), sep);
             break;
 
         case COOL_HIDDEN_VOID:
