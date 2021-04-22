@@ -71,12 +71,12 @@ small helping library
 3. Так же определены соответствующие операторы += и *=
 
 
-##### `#include <cool/boostFormatLiteral.hpp>
+##### `#include <cool/boostFormatLiteral.hpp>`
 
-`using namespace cool::boost::literals;` определяет литерал `_f` для строк в кавычках   
-Более простая запись для  `boost::format("some text var1: %s var2: %s") % 42 % "wowow"`    
+`using namespace cool::boost::literals;` определяет литерал `_f` для строк в кавычках. Более простая запись для `boost::format`
 
-Заменяется на             `"some text var1: %s var2: %s"_f % 42 % "wowow"
+      Запись boost::format("some text var1: %s var2: %s") % 42 % "wowow"
+      Заменяется на "some text var1: %s var2: %s"_f   % 42 % "wowow" 
 
 Необходима должна быть подключена к проекту библиотека `boost`
 
