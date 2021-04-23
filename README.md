@@ -94,7 +94,10 @@ small helping library
             co_yield i;
         }
     }
-
+ 
+ Аналогичный generator есть в файле experimental/genetator в стандартной библиотеке visual studio. Скорее всего его добавят в C++23
+ 
+ 
 `range(a, b, step)` - возвращает генератор чисел от a до b (невключительно) с шагом step
 
 `range(a, b)` - возвращает генератор чисел от a до b (невключительно) с шагом 1
