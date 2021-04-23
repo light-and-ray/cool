@@ -75,8 +75,8 @@ small helping library
 
 `using namespace cool::boost::literals;` определяет литерал `_f` для строк в кавычках. Более простая запись для `boost::format`
 
-      Запись boost::format("some text var1: %s var2: %s") % 42 % "wowow"
-      Заменяется на "some text var1: %s var2: %s"_f   % 42 % "wowow" 
+      Запись          cout << boost::format("value x = {%s}, f(x) = {%s}") % x % f(x)
+      Заменяется на   cout << "value x = {%s}, f(x) = {%s}"_f   % x % f(x)
 
 Необходима должна быть подключена к проекту библиотека `boost`
 
