@@ -81,7 +81,7 @@ small helping library
 Необходима должна быть подключена к проекту библиотека `boost`
 
 
-##### `#include <cool/generators.hpp>   C++20
+##### `#include <cool/generators.hpp>   C++20`
 
 `generator<Type>` - обьект-генератор, имеющий интерфейс, аналогичный контейнерам, но при этом это функция, которая по мере выполнения возвращает значения. Аналогичен генераторам в Python, базируется на стандартной библиотеке сопрограмм `<coroutine>` Код генератора взят здесь https://gist.github.com/Serikov/b28115e3b13a7c0ec45ab76468ddb0bd#file-main-cpp-L53 , `range` и `enumerate` написаны мной
 
