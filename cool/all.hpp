@@ -5,5 +5,8 @@
 #include "random.hpp"
 #include "stringOperators.hpp"
 #include "loop.hpp"
+#include "boostFormatLiteral.hpp"
+#include "generators.hpp"
+
 
 #endif
