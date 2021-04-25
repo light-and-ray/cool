@@ -4,7 +4,7 @@
 #include <string>
 
 
-#if __cplusplus > 201703L and 0
+#if __cplusplus > 201703L or (_MSVC_LANG > 201703L)
 
 template<class T>
 concept Has_to_string = requires(T a)

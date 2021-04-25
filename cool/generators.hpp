@@ -1,5 +1,5 @@
 //why visual studio extends __cplusplus like 199711
-#if (__cplusplus > 201703L) or 1
+#if (__cplusplus > 201703L) or (_MSVC_LANG > 201703L)
 
 #ifndef COOL_GENERATORS_HPP
 #define COOL_GENERATORS_HPP
